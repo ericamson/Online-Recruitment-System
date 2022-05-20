@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amson Eric</title>
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/check.js"></script>
+</head>
+<body>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+<a class="navbar-brand" href="">AMSON RECRUITMENTS</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto text-right">
+<li class="nav-item">
+<a class="nav-link active-home" href="">Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Sign-in
+</a>
+<div class="dropdown-menu text-left ml-auto" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" onclick="document.getElementById('id01').style.display='block'">Applicant</a>
+<a class="dropdown-item" onclick="document.getElementById('id03').style.display='block'">Organization</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Sign-up
+</a>
+<div class="dropdown-menu text-left ml-auto" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" onclick="document.getElementById('id02').style.display='block'">Applicant</a>
+<a class="dropdown-item" onclick="document.getElementById('id04').style.display='block'">Organization</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="html/about.html">ABOUT</a>
+</li>
+</ul>
+</div>  
+</nav>
+
+
+
+
+<div id="id01" class="modal">   
+
+  
+  
+<form id="clogin" class="modal-content animate" action="php/c_process.php" method="post">
+<div class="head">
+	
+</div>
+
+    <div class="container">
+		<h2 align="center">Applicant Log-in</h2>
+		<label><b>E-mail</b></label>
+		  <input type="text" label="ftext" placeholder="Enter E-mail" onfocus="this.placeholder=''" name="e-mail" required>
+
+		<label><b>Password</b></label>
+		<input type="password" label="ftext" placeholder="Enter Password!" onfocus="this.placeholder=''" name="password" required>
+        <div id="container">
+			<button type="submit" name="c_login" value="Submit" class="login">Log-in</button>
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+		</div>
+	</div>
+
+         
+      
+
+	</form>
+
+  
+</div>
+
+<div id="id02" class="modal">   
+
+  
+  
+    <form id="cregister" class="modal-content animate" onSubmit = "return check(this)" action="php/c_register.php" method="post">
+    <div class="head">	
+	</div>
+
+    <div class="container">
+		<h2 align="center">Applicant Registeration</h2>
+		<label><b>Full Name</b></label>
+		<input type="text" label="ftext" placeholder="Enter Your Full Name" onfocus="this.placeholder=''" name="name" required>
+		<label><b>E-mail</b></label>
+		<input type="mail" label="ftext" placeholder="Enter Your E-mail" onfocus="this.placeholder=''" name="e-mail" required>
+		<label><b>Create Password</b></label>
+		<input type="password" label="ftext" placeholder="Enter Your Password" onfocus="this.placeholder=''" name="password" required>
+		<label><b>Confirm Password</b></label>
+		<input type="password" label="ftext" placeholder="Confirm Password" onfocus="this.placeholder=''" name="cnfpassword" required>
+		<label><b>Your Date of Birth</b></label>
+		</select>
+		<select name="mm">
+		<option selected hidden value="00">Month</option>
+		<option value="1">January</option> <option value="2">February</option> <option value="3">March</option>
+		<option value="4">April</option> <option value="5">May</option> <option value="6">June</option>
+		<option value="7">July</option> <option value="8">August</option> <option value="9">September</option>
+		<option value="10">October</option> <option value="11">November</option> <option value="12">December</option>
+		</select>
+		<select name="dd">
+		<option selected hidden value="00">Date</option>
+		<option value="01">01</option> <option value="02">02</option> <option value="03">03</option> <option value="04">04</option>
+		<option value="05">05</option> <option value="06">06</option> <option value="07">07</option> <option value="08">08</option>
+		<option value="09">09</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option>
+		<option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option>
+		<option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option>
+		<option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option>
+		<option value="25">25</option> <option value="26">26</option> <option value="27">27</option> <option value="28">28</option>
+		<option value="29">29</option> <option value="30">30</option> <option value="31">31</option>
+		</select>
+		<select name="yyyy">
+		<option selected hidden value="0000">Year</option>
+		<option value="1980">1980</option> <option value="1981">1981</option> <option value="1982">1982</option> <option value="1983">1983</option>
+		<option value="1984">1984</option> <option value="1985">1985</option> <option value="1986">1986</option> <option value="1987">1987</option>
+		<option value="1988">1988</option> <option value="1989">1989</option> <option value="1990">1990</option> <option value="1991">1991</option>
+		<option value="1992">1992</option> <option value="1993">1993</option> <option value="1994">1994</option> <option value="1995">1995</option>
+		<option value="1996">1996</option> <option value="1997">1997</option> <option value="1998">1998</option> <option value="1999">1999</option>
+		<option value="2000">2000</option> <option value="2001">2001</option> <option value="2002">2002</option> <option value="2003">2003</option>
+		</select><br>
+		<label><b>Gender</b></label>
+		<input type="radio" label="radio" name="gender" value="M" required>Male
+		<input type="radio" label="radio" name="gender" value="F" required>Female</br>
+		<label><b>Mobile Number</b></label>
+		<input type="text" label="fix" value="+233" name="code"readonly>
+		<input type="text" label="phn" onkeypress="return isNumberKey(event)" placeholder="Enter Your Mobile Number" name="number" size="10px" required minlength="10" maxlength="10" onfocus="this.placeholder=''">
+		<label><b>Your Best Qualification</b></label>
+		<select name="qualification">
+		<option selected hidden value="00">Select</option>
+		<optgroup label="Undergraduate">
+		<option value="Master's Degree">Master's Degree</option> <option value="Bachelor's Degree">BAchelor's Degree</option> <option value="WASSCE<">WASSCE</option> <option value="BECE">BECE</option>
+		</select><br>
+		<label><b><br>Work Experience</b></label>
+		<input type="text" label="exp" onkeypress="return isNumberKey(event)" placeholder="0" name="experience" required size="1px" value="0" onclick="this.select();">
+        <label><b>years</b></label>
+		
+		<div id="container">
+		<button type="submit" class="register">Sign-up</button>
+		<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+		</div>
+	</div>
+</form>  
+</div>
+
+
+<div id="id03" class="modal">   
+  
+<form id="rlogin" class="modal-content animate" action="php/r_process.php" method="post">
+<div class="head">
+</div>
+    
+	<div class="container">
+		<h2 align="center">Organization Log-in</h2>
+		<label><b>E-mail</b></label>
+		  <input type="text" label="ftext" placeholder="Enter Your E-mail" onfocus="this.placeholder=''" name="e-mail" required>
+
+		<label><b>Password</b></label>
+		<input type="password" label="ftext" placeholder="Enter Your Password" onfocus="this.placeholder=''" name="password" required>
+        <div id="container">
+			<button type="submit" name="r_login" value="Submit" class="login">Log-in</button>
+			<button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+		</div>
+	</div>
+
+      
+</form>
+  
+</div>
+
+<div id="id04" class="modal">   
+
+    <form id="rregister" class="modal-content animate" onSubmit = "return check(this)" action="php/r_register.php" method="post">
+    <div class="head">	
+	</div>
+
+    <div class="container">
+		<h2 align="center">Organization Registeration</h2>
+		<label><b>Name Of Organization</b></label> <input type="text" label="ftext" placeholder="Organization Name" onfocus="this.placeholder=''" name="name" required>
+		<label><b>E-mail</b></label> <input type="e-mail" label="ftext" placeholder="Enter E-mail" onfocus="this.placeholder=''" name="e-mail" required>
+		<label><b>Create Password</b></label>
+		<input type="password" label="ftext" placeholder="Enter Password" onfocus="this.placeholder=''" name="password" required>
+		<label><b>Confirm Password</b></label>
+		<input type="password" label="ftext" placeholder="Confirm Password" onfocus="this.placeholder=''" name="cnfpass" required>
+		<label><b>Tel NUmber</b></label>
+		<input type="text" label="fix" value="+233" name="code"readonly>
+		<input type="text" label="phn" onkeypress="return isNumberKey(event)" placeholder="Enter Tel Number" name="number" size="12px" required minlength="10" maxlength="10" onfocus="this.placeholder=''">
+		
+		<div id="container">
+		<button type="submit" class="register">Sign-up</button>
+		<button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+		</div>
+	</div>
+</form>  
+</div>
+
+
+
+<section class="service">
+<div class="title" data-aos="fade-up">
+
+
+
+
+<div class="container">
+
+
+<h2 class="title"><font size= "30px" color="dodgerblue">Specialties</h2>
+
+</font>
+
+
+
+<div class="row">
+
+   <div class="col-md-3"  data-aos="zoom-in" data-aos-duration="1200">
+   <div class="service-box">
+   <div class="service-box-inner">
+   <div class="service-box-front">
+    <img src="pics/1.jpg">
+    <h6>Organized Search</h6>
+   </div>
+   <div class="service-box-back">
+<h5>Organized Search<h5>
+<p>Due to how organized the search is, you can find what youre looking for in a few seconds.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3"  data-aos="zoom-in" data-aos-duration="1200">
+<div class="service-box">
+<div class="service-box-inner">
+<div class="service-box-front">
+<img src="pics/2.jfif">
+<h6>Optimized Webpages</h6>
+</div>
+<div class="service-box-back">
+<h5>Optimized Webpages<h5>
+<p>Our web pages are advanced to give you fast and accurate experiences.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3"  data-aos="zoom-in" data-aos-duration="1200">
+<div class="service-box">
+<div class="service-box-inner">
+<div class="service-box-front">
+<img src="pics/3.png">
+<h6>User Friendly</h6>
+</div>
+<div class="service-box-back">
+<h5>User Friendly<h5>
+<p>With a friendly user interface, you spend seconds surfing among pages easily.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3"  data-aos="zoom-in" data-aos-duration="1200">
+<div class="service-box">
+<div class="service-box-inner">
+<div class="service-box-front">
+<img src="pics/4.png">
+<h6>24/7 Support</h6>
+</div>
+<div class="service-box-back">
+<h5>24/7 Support<h5>
+<p>With our 24/7 support we esure you get the best service possible.<br>We elucubrate so you don't have to suffer.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="service">
+<div class="title" data-aos="fade-up">
+
+
+
+
+<div class="container">
+<h2 class="title"><font align="center" size= "30px" color="dodgerblue">Importance Of Using Our Services</h2>
+<p class="subtitle"></p>
+</font>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="feature">
+<div class="title">
+<div class="container">
+<div class="row">
+<div class="col-md-6" data-aos="fade-right" data-aos-duration="1500">
+<img src="pics/5.jpeg">
+</div>
+<div class="col-md-6 text" data-aos="fade-left" data-aos-duration="1500">
+<h2>Jobs In Abundance</h2>
+<p>No need to go company to company searching for jobs.<br>Just sign-up and find any kind of job youre in search of.</p>
+<a  onclick="document.getElementById('id02').style.display='block'">Sign-up</a>
+<a  onclick="document.getElementById('id01').style.display='block'">Log-in</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="feature2">
+<div class="title">
+<div class="container">
+<div class="row">
+<div class="col-md-6 text" data-aos="fade-right" data-aos-duration="1500">
+<h2>Well Organized Recruitment</h2>
+<p>Say goodbye to pen, papers, bunch of cv's and all those hassles you have to go through to select a good and valuable employee for the company.<br>Register with us and get everything at one place to recruit quickly and more efficiently.</p>
+<a onclick="document.getElementById('id04').style.display='block'">Sign-Up</a>
+<a onclick="document.getElementById('id03').style.display='block'">Log-in</a>
+</div>
+<div class="col-md-6" data-aos="fade-left" data-aos-duration="1500">
+<img src="pics/6.jpg">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="footer text-center">
+<a class="navbar-brand" href="#top">^Back To Top^</a>
+</section>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+<script type="text/javascript">AOS.init({duration : 1200,})</script>
+<!--For Scrolling to the Top -->
+<script type="text/javascript">
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1500);
+    }
+
+});
+</script>
+<!--For Login Window -->
+
+<script>
+var modal0 = document.getElementById('id01');
+var modal1 = document.getElementById('id02');
+var modal2 = document.getElementById('id03');
+var modal3 = document.getElementById('id04');
+window.onclick = function(event) {
+    if (event.target == modal0) {
+        modal0.style.display = "none";
+    }
+	if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+	if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+	if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+</script>

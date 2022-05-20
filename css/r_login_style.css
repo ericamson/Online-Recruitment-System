@@ -1,0 +1,522 @@
+*{
+	margin-bottom: -5px;
+	font-family: 'Nova Round';
+}
+.header{
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+body{
+	overflow-x: hidden;
+}
+
+/*Navigation Bar*/
+
+.nav-item{
+	margin-left: 40px;
+	margin-bottom: 15px;	
+}
+.nav-link{
+	color: #fff !important;
+	font-size: 15px !important;
+	padding: 0 0 5px 0 !important;
+	display: unset !important;	
+}
+.active-home{
+	border-bottom: 2px solid #fff;	
+}
+.nav-link:hover{
+	border-bottom: 2px solid #000;	
+}
+.navbar-nav > li > .dropdown-menu {
+	background-color: #fff;
+    margin-top: 3px;
+	margin-left: -3px;
+    display: block;
+    transform: scale(0);	
+}
+.dropdown:hover .dropdown-menu {
+    transform: scale(1);
+	border-bottom: 2px solid #000;
+	background-color: #66b2ff;
+	cursor: pointer;
+	width: 0px;	
+}
+
+/*Navigation Bar End*/
+
+/*Fortes*/
+
+.service{
+	margin-top: 175px;
+}
+.title{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 80px;
+}
+.service-box{
+	padding: 0 35px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.service-box img{
+	width: 100px;
+	cursor: pointer;
+	margin-bottom: 45px;
+	margin-top: 35px;
+}
+.service-box h6{
+	font-weight: bold;
+}
+.service-box p{
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 20px;
+	color: #000;
+}
+@media screen and (min-width: 1200px)
+{
+	.service-box p
+	{
+	font-size: 15px;
+	}
+	
+	.service-box h6{
+	margin-top: -25px;
+	}
+	.service-box h5{
+	color: #fff;
+	margin-top: 20px;
+	}
+}
+@media screen and (max-width: 1199px)
+{
+	.service-box p
+	{
+	font-size: 11px;
+	}
+	
+	.service-box h6{
+	margin-top: -25px;
+	}
+	.service-box h5{
+	color: #fff;
+	margin-top: 20px;
+	}	
+}
+@media screen and (max-width: 990px)
+{
+	.service-box p
+	{
+	font-size: 0px;
+	}
+	
+	.service-box h6{
+	margin-top: -25px;
+	}
+	.service-box h5{
+	color: #000;
+	margin-top: 80px;
+	}
+}
+@media screen and (max-width: 768px)
+{
+	.service-box p
+	{
+	font-size: 20px;
+	}
+	
+	.service-box h6{
+	margin-top: -25px;
+	}
+	.service-box h5{
+	color: #fff;
+	margin-top: 20px;
+	}
+}
+.service-box {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.service-box-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.service-box:hover .service-box-inner {
+  transform: rotateY(180deg);
+}
+.service-box-front, .service-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+}
+.service-box-front {
+  background-color: #bbb;
+  color: black;
+}
+.service-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+/*Fortes End*/
+
+/*Benifits*/
+
+.feature, .feature2{
+	margin: 100px 0;
+}
+.feature img, .feature2 img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+.feature h2, .feature2 h2{
+	margin-top: 50px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 50px;
+}
+.feature p, .feature2 p{
+	margin-top: 25px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+}
+.text{
+	z-index: 1;
+	background-color: rgba(100, 100, 100, 0.5);
+}
+.feature a, .feature2 a{
+	padding: 15px 15px;
+	margin-right: 75px;
+	margin-left: 75px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: dodgerblue;
+	border: groove;
+	border-radius: 50px;
+	box-shadow: 0 5px #444;
+}
+.feature a:hover, .feature2 a:hover {
+	background-color: #fff;
+	color: dodgerblue;
+	border: double;
+	border-radius: 50px;
+	box-shadow: 0 5px #222;
+}
+.feature a:active, .feature2 a:active {
+	background-color: dodgerblue;
+	color: #fff;
+	box-shadow: 0 2px #999;
+}
+@media screen and (max-width: 551px)
+{
+	.feature a, .feature2 a
+	{
+		padding: 5px 5px;
+		margin-right: 55px;
+		margin-left: 55px;
+	}
+	
+}
+@media screen and (min-width: 768px)
+{
+	.feature a, .feature2 a
+	{
+		padding: 5px 5px;
+		margin-right: 40px;
+		margin-left: 40px;
+		
+	}
+	.feature img, .feature2 img
+	{
+	height: 485px;
+	}
+}
+@media screen and (min-width: 992px)
+{
+	.feature a, .feature2 a
+	{
+		padding: 5px 5px;
+		margin-right: 45px;
+		margin-left: 45px;
+	}
+	.feature img, .feature2 img
+	{
+	height: 400px;
+	}
+}
+
+@media screen and (min-width: 1200px)
+{
+	.feature a, .feature2 a
+	{
+		padding: 15px 15px;
+		margin-right: 75px;
+		margin-left: 75px;
+	}
+	.feature img, .feature2 img
+	{
+	height: 400px;
+	}
+}
+
+/*Benifits End*/
+
+/*Login & Register Form*/
+
+input[label=ftext] {
+	width: 50%;
+	padding: 10px 20px;
+	margin-top: 2px;  
+	margin-bottom: 20px;
+	margin-left: 9vw;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+}
+
+
+
+
+label textarea {
+	width: auto;
+	padding: 10px 20px;
+	margin-top: 2px;  
+	margin-bottom: 20px;
+	margin-left: 7.5vw;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+input[label=fix]{
+	width: 15vw;
+	padding: 8px 20px;
+	margin-top: 2px;  
+	margin-bottom: 20px;
+	margin-left: 8.2vw;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+}
+input[label=exp]{
+	width: 80px;
+	padding: 10px 20px;
+	margin-top: 2px;  
+	margin-bottom: 20px;
+	margin-left: 4vw;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+}
+input[label=phn]{
+	width: 20vw;
+	padding: 10px 20px;
+	margin-top: 2px;  
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+}
+select{
+	width: auto;
+	padding: 10px 20px;
+	margin-top: 2px;  
+	margin-bottom: 20px;
+	margin-left: 1vw !important;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+}
+input[label=radio]{
+	width: auto;
+	padding: 10px 20px;
+	margin-top: 20px;  
+	margin-bottom: 20px;
+	margin-left: 4vw;
+	margin-right: auto;
+	display: inline;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+}
+#container{
+	text-align: center;
+}
+.login, .register {
+	display: inline-grid;
+	margin: 20px auto;
+	padding: 10px 10px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	outline: none !important;
+	color: #fff;
+	background-color: dodgerblue;
+	border: groove;
+	border-radius: 50px;
+	box-shadow: 0 5px #444;
+	width: 19vw;
+}
+.cancelbtn {
+	display: inline-grid;
+	margin: 20px auto;
+	padding: 10px 10px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	outline: none !important;
+	color: #fff;
+	background-color: #f44336;
+	border: groove;
+	border-radius: 50px;
+	box-shadow: 0 5px #444;
+	width: 15vw;
+}
+@media screen and (max-width: 600px)
+{
+	.cancelbtn
+	{
+		display: none;
+	}
+}
+.login:hover, .register:hover {
+	background-color: #fff;
+	color: dodgerblue;
+	border: double;
+	border-radius: 50px;
+	box-shadow: 0 5px #222;
+}
+.cancelbtn:hover {
+	background-color: #fff;
+	color: #f44336;
+	border: double;
+	border-radius: 50px;
+	box-shadow: 0 5px #222;
+}
+.login:active, .register:active {
+  background-color: dodgerblue;
+  color: #fff;
+  box-shadow: 0 2px #999;
+  transform: translateY(4px);
+}
+.cancelbtn:active {
+  background-color: #f44336;
+  color: #fff;
+  box-shadow: 0 2px #999;
+  transform: translateY(4px);
+}
+span.psw {
+	text-align: center;
+	padding-top: 10px;
+}
+/*The Modal (background)*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto !important; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  padding-top: 15px !important;
+}
+.modal-content {
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+	background-color: #fff !important;
+	margin: 5% auto 10% auto !important;
+	width: 40% !important;
+}
+.animate
+{
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom
+{
+	from {-webkit-transform: scale(0)}
+	to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom
+{
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
+
+/*Login & Register Form End*/
+
+/*Footer*/
+
+.footer{
+	background: dodgerblue;
+	padding-top: 5px;
+}
+
+
+.footer a{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px 5px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: dodgerblue;
+	border: groove;
+	border-radius: 50px;
+	box-shadow: 0 5px #444;
+}
+
+.footer a:hover {
+	background-color: #fff;
+	color: dodgerblue;
+	border: double;
+	border-radius: 50px;
+	box-shadow: 0 5px #222;
+}
+
+.footer a:active {
+  background-color: dodgerblue;
+  color: #fff;
+  box-shadow: 0 2px #999;
+  transform: translateY(8px);
+}
+
+/*Footer End*/

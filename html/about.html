@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<link href="../css/about.css" rel="stylesheet">
+<link href="../css/font.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/imagehover.min.css" rel="stylesheet">
+<link href="../css/aos.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../js/rellax.js"></script>
+<script src="../js/aos.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="js/check.js"></script>
+</head>
+<body>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+<a class="navbar-brand" href="../index.html">Amson Eric</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+<span class="navbar-toggler-icon"></span>
+</button>
+</nav>
+  
+
+<div class="rellax" id="top"><h1 data-aos="fade-down">About</h1></div>
+
+<div class="content">
+<h1 data-aos="fade-up">Project<p><b>My project is to build a Web-Based Recruitmenet Management System for companies and co-op.</b><br>A system that helps both the <b>Applicant</b> and the <b>Organization</b> in providing ease of access to jobs and employees respectively.</p></h1>
+
+
+<h1 data-aos="fade-up">Me<p>
+<figure class="imghvr-shutter-in-out-diag-1">
+    <img src="../pics/7.jfif">
+    <figcaption>
+        <h3><br>Amson Kwasi Eric<br><br>050918016</h3>
+    </figcaption>
+</figure>
+
+</p></h1>
+
+<h1 data-aos="fade-up">Mentor<p>
+<figure class="imghvr-shutter-in-out-diag-1">
+    <img src="../img/ss_srivastava.jpg">
+    <figcaption>
+        <h3><br><br>Mr. ????<br><br>Lecturer</h3>
+    </figcaption>
+</figure>
+</p></h1>
+
+<section class="footer text-center">
+<a class="navbar-brand" href="#top">^Back To Top^</a>
+</section>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">AOS.init({duration : 1200,})</script>
+
+
+
+<script>
+  //can pass in optional settings block
+  var rellax = new Rellax('.rellax', {
+    speed: 10,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+</script>
+<!--For Scrolling to Top -->
+<script type="text/javascript">
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 2500);
+    }
+
+});
+</script>
